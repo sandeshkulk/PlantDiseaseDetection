@@ -1,0 +1,39 @@
+.headerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorMessage{
+    padding: 10px;
+    color: red;
+}
+
+.accuracySection{
+    padding: 10px;
+    color: darkblue;
+}
+
+.showImageSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settingWidth{
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+}
