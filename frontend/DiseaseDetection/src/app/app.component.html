@@ -1,0 +1,29 @@
+<div class="headerLogo">
+  <h2>Plant Disease Detection Model</h2>
+ <!-- <div>
+    Explain your Project
+  </div> -->
+</div>
+<div class="uploadButton">
+  <input
+    type="file"
+    id="fileInput"
+    name="fileInput"
+    accept="image/*"
+    (change)="onUpload($event)"
+  />
+</div>
+<div  *ngIf="showImage">
+    <div class="showImageSection">    
+        <img  class="settingWidth" [src]="newImgUrl">
+    </div>
+</div>
+<div class="messageSection">
+  <div *ngIf="dName">Disease Name: {{ dName }}</div>
+</div>
+<div class="messageSection accuracySection">
+  <div *ngIf="accuracy">Accuracy: {{ accuracy }} %</div>
+</div>
+<div class="messageSection errorMessage">
+  <div *ngIf="errorName">Error!! No Crop Detected</div>
+</div>
